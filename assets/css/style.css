@@ -114,6 +114,17 @@ main {
     color: #ffffff;
 }
 
+#reasons {
+    margin: 20px auto 20px auto;
+    width: 90%;
+}
+
+/* saved here last */
+#reasons h2 {
+    margin: auto;
+    font-size: 280%;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
