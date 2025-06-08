@@ -18,7 +18,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1, 
+h2, 
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -49,7 +51,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -104,28 +106,30 @@ main {
     position: absolute;
     bottom: 30px;
     width: 80%;
-    height: 200px;
+    min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
-
 }
 
-#cover-text > h2, #cover-text> h3 {
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 }
 
+/* Reasons section */
 #reasons {
-    margin: 20px auto 20px auto;
     width: 90%;
+    margin: 20px auto;
 }
 
 #reasons h2 {
-    margin: auto;
-    font-size: 280%;
+    margin-bottom: 20px;
     text-align: center;
+    font-size: 280%;
 }
 
-#benefits-physical p , #benefits-mental p {
+#benefits-physical>div, 
+#benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
     padding: 0 20px;
@@ -134,6 +138,23 @@ main {
 #benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+}
+
+/* Reason image section */
+#circle-cover-bg {
+    background: url("../images/reasons-image.webp") no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Footer */
@@ -166,7 +187,7 @@ main {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -195,7 +216,7 @@ main {
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover{
+    #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 }
