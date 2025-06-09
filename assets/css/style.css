@@ -198,6 +198,13 @@ main {
     line-height: 0;
 }
 
+/* Signup page */
+#signup {
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
